@@ -155,7 +155,7 @@ h1{
 
 .section-3-waiting-card{
 
-  position: absolute;
+  position: relative;
   width: 493px;
   height: 752px;
   left: 510px;
@@ -522,6 +522,43 @@ span {
 
 }
 
+
+.recipe-book{
+  position: absolute;
+  
+  z-index: 1;
+  width: 202px;
+  height: 162px;
+  left: 740px;
+  top: 40px;
+}
+
+.chef-sleep {
+  position: absolute;
+
+  z-index: 1;
+  width: 265px;
+  height: 359px;
+  left: 710px;
+  top: 340px;
+}
+
+
+.recipe-appear-here{
+  position: absolute;
+  text-align: center;
+  width: 300px;
+  height: 80px;
+
+  z-index: 1;
+  left: 690px;
+  top: 210px;
+  
+  font-family: 'jost';
+  font-size: 26px;
+  color: #240D3E;
+  font-weight: bolder;
+}
 
 
 
