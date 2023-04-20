@@ -1,0 +1,530 @@
+/* background */
+
+
+body {
+
+  background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);
+
+}
+
+
+/* header */
+
+header{
+
+  position: absolute;
+  width: 785px;
+  height: 149px;
+  left: 697px;
+  top: 46px;
+  
+  background: linear-gradient(90deg, rgba(255, 88, 88, 0.8) 0%, rgba(240, 152, 25, 0.8) 100%);
+  border-radius: 25px;
+
+}
+
+
+
+h1{
+  
+  position: absolute;
+  width: 362px;
+  height: 33px;
+  left: 38px;
+  top: 1px;
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+}
+
+
+
+.header-text{
+
+  position: absolute;
+  width: 666px;
+  height: 58px;
+  left: 44px;
+  top: 40px;
+  
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  
+  color: #FFFFFF;
+
+}
+
+
+.header-image{
+
+  position: absolute;
+  left: 640px;
+
+}
+
+
+
+/* section-1-sidebar */
+
+.section-1-sidebar {
+
+  position: absolute;
+  width: 297px;
+  height: 1024px;
+  left: 0px;
+  top: 0px;
+
+  background: #FFFFFF;
+  border-radius: 0px 0px 15px 15px;
+
+}
+
+.div-1-logo{
+
+  position: absolute;
+  width: 233px;
+  height: 182px;
+  left: 32px;
+  top: 63px;
+
+}
+
+
+
+.instructions-title{
+
+  position: absolute;
+  width: 168px;
+  height: 32px;
+  left: 66px;
+  top: 294px;
+    
+  font-family: 'Jost', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 35px;
+    
+  color: #240D3E;
+
+}
+
+
+.instructions-text{
+
+  position: absolute;
+  width: 216px;
+  height: 260px;
+  left: 33px;
+  top: 352px;
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+
+  color: #240D3E;
+
+}
+
+
+.div-3-magic{
+
+  position: absolute;
+  width: 169px;
+  height: 289px;
+  left: 64px;
+  top: 681px;
+
+}
+
+
+/* section-3-waiting-card */
+
+.section-3-waiting-card{
+
+  position: absolute;
+  width: 493px;
+  height: 752px;
+  left: 510px;
+  top: 245px;
+  
+  background: #FFFFFF;
+  border-radius: 60px;
+
+  }
+
+.girl-phone{
+  position: absolute;
+  width: 90px;
+  height: 212px;
+  right: 1020px;
+  bottom: 665px;
+
+}
+
+
+
+  /* section-4-food-card */
+
+.section-4-food-card {
+
+  position: absolute;
+  width: 493px;
+  height: 752px;
+  left: 1100px;
+  top: 236px;
+
+  background: #FFFFFF;
+  border-radius: 60px;
+
+}
+
+
+.food-card-div-1-name{
+
+  position: absolute;
+  width: 198px;
+  height: 31px;
+  left: 428px;
+  top: 266px;
+  
+}
+
+
+.name-input-background {
+    
+  position: absolute;
+  width: 383px;
+  height: 56px;
+  right: 650px;
+  top: 95px;
+
+  background: #E6E9F0;
+  border-radius: 20px;
+
+}
+
+
+
+
+
+h3{
+  font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+  
+    color: #240D3E;
+}
+
+
+
+
+ /* form text */
+
+.enter-your-name{
+
+  position: absolute;
+  width: 198px;
+  height: 31px;
+  right: 860px;
+  top: 30px;
+
+}
+
+
+
+.select-one-meat{
+
+  position: absolute;
+    width: 198px;
+    height: 31px;
+    right: 860px;
+    top: 150px;
+
+}
+
+
+
+.select-one-carb{
+
+  position: absolute;
+  width: 198px;
+  height: 31px;
+  right: 862px;
+  top: 310px;
+
+}
+
+
+
+.select-one-veggie {
+
+  position: absolute;
+  width: 198px;
+  height: 31px;
+  right: 860px;
+  top: 470px;
+
+}
+
+
+
+
+ /* food buttons */
+
+
+.chicken-button {
+  position: absolute;
+  right: 920px;
+  top: 213px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 116px;
+  height: 102px;
+  background: url(./images/chicken-icon.png);
+  background-color: rgba(253, 160, 133, 0.1);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+
+
+
+.beef-button{
+
+  position: absolute;
+  right: 785px;
+  top: 213px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 116px;
+  height: 102px;
+  background: url(./images/beef-icon.png);
+  background-color: rgba(253, 160, 133, 0.1);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+
+
+
+.fish-button {
+
+  position: absolute;
+  right: 650px;
+  top: 213px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 116px;
+  height: 102px;
+  background: url(./images/fish-icon.png);
+  background-color: rgba(253, 160, 133, 0.1);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  border-radius: 8px;
+  border: none;
+
+}
+
+
+
+.rice-button {
+
+  position: absolute;
+  right: 920px;
+  top: 375px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 116px;
+  height: 102px;
+  background: url(./images/rice-icon.png);
+  background-color: rgba(253, 160, 133, 0.1);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  border-radius: 8px;
+  border: none;
+
+}
+
+
+
+.pasta-button {
+
+  position: absolute;
+  right: 785px;
+  top: 375px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 116px;
+  height: 102px;
+  background: url(./images/pasta-icon.png);
+  background-color: rgba(253, 160, 133, 0.1);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  border-radius: 8px;
+  border: none;
+
+}
+
+
+.potato-button {
+
+  position: absolute;
+  right: 650px;
+  top: 375px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 116px;
+  height: 102px;
+  background: url(./images/potato-icon.png);
+  background-color: rgba(253, 160, 133, 0.1);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  border-radius: 8px;
+  border: none;
+
+}
+
+
+.carrot-button {
+
+  position: absolute;
+  right: 920px;
+  top: 535px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 116px;
+  height: 102px;
+  background: url(./images/carrot-icon.png);
+  background-color: rgba(253, 160, 133, 0.1);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  border-radius: 8px;
+  border: none;
+
+}
+
+
+
+.broccoli-button {
+
+  position: absolute;
+  right: 785px;
+  top: 535px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 116px;
+  height: 102px;
+  background: url(./images/broccoli-icon.png);
+  background-color: rgba(253, 160, 133, 0.1);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  border-radius: 8px;
+  border: none;
+
+}
+
+
+
+.asparagus-button {
+
+  position: absolute;
+  right: 650px;
+  top: 535px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 116px;
+  height: 102px;
+  background: url(./images/asparagues-icon.png);
+  background-color: rgba(253, 160, 133, 0.1);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  border-radius: 8px;
+  border: none;
+
+}
+
+
+
+span {
+  margin-bottom: 12px;
+}
+
+
+ /* submit form button */
+
+
+.food-card-div-5-form-button {
+
+  position: absolute;
+  width: 198px;
+  height: 66px;
+  right: 740px;
+  top: 680px;
+
+  background: linear-gradient(90deg, #ED6EA0 0%, #EC8C69 100%);
+  border-radius: 25px;
+
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 64px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+}
+
+
+
+
+
+
+   
