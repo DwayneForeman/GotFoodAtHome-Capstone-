@@ -109,63 +109,54 @@ Click<br>
 
 
 
+
+<!-- form-creation -->
+
+
+
+
+<form>
+
+
+
+
 <!-- section-4-food-card -->
-  
+
 <section class="section-4-food-card">
 
-<img src="./images/girl-phone.png" alt="girl-with-phone" class="girl-phone">
+  <img src="./images/girl-phone.png" alt="girl-with-phone" class="girl-phone">
 
-<h3 class="enter-your-name">Enter Your Name</h3>
-
-
-<div class="name-input-background"></div>
+  <h3 class="enter-your-name">Enter Your Name</h3>
 
 
-
-
-
-
-<!-- meats -->
-
-<h3 class="select-one-meat" class="meat-button">Select one Meat</h3>
-
-<div class="food-card-div-2-meat">
-
-
-
-<!-- chicken-button -->
-<button class="chicken-button"><span>Chicken</span></button>
-
-<!-- beef-button -->
-<button class="beef-button"><span>Beef</span></button>
-
-<!-- fish-button -->
-<button class="fish-button"><span>Fish</span></button>
-
-</div>
+  <input type="text" name="name" class="name-input-background">
 
 
 
 
 
 
+  <!-- meats -->
 
-<!-- carbs -->
+  <h3 class="select-one-meat" class="meat-button">Select one Meat</h3>
 
-<h3 class="select-one-carb">Select one Carb</h3>
-
-<div class="food-card-div-3-carb"> </div>
-
+  <div class="food-card-div-2-meat">
 
 
-<!-- rice-button -->
-<button class="rice-button"><span>Rice</span></button>
 
-<!-- pasta-button -->
-<button class="pasta-button"><span>Pasta</span></button>
+    <!-- chicken-button -->
+    <button type="button" name="meats" value="chicken" onclick="highlightButton(this)"
+      class="chicken-button"><span>Chicken</span></button>
 
-<!-- potato-button -->
-<button class="potato-button"><span>Potato</span></button>
+    <!-- beef-button -->
+    <button type='button' name="meats" value="beef" onclick="highlightButton(this)"
+      class="beef-button"><span>Beef</span></button>
+
+    <!-- fish-button -->
+    <button type="button" name="meats" value="fish" onclick="highlightButton(this)"
+      class="fish-button"><span>Fish</span></button>
+
+  </div>
 
 
 
@@ -173,34 +164,68 @@ Click<br>
 
 
 
-<!-- veggies -->
-<h3 class="select-one-veggie">Select one Veggie</h3>
+  <!-- carbs -->
 
-<div class="food-card-div-4-veggie"></div>
+  <h3 class="select-one-carb">Select one Carb</h3>
 
-<!-- carrot-button -->
-<button class="carrot-button"><span>Carrot</span></button>
-
-<!-- broccoli-button -->
-<button class="broccoli-button"><span>Broccoli</span></button>
-
-<!-- asparagus-button -->
-<button class="asparagus-button"><span>Asparagus</span></button>
+  <div class="food-card-div-3-carb"> </div>
 
 
 
+  <!-- rice-button -->
+  <button type="button" name="carbs" value="rice" onclick="highlightButton(this)"" class="
+    rice-button"><span>Rice</span></button>
 
+  <!-- pasta-button -->
+  <button type="button" name="carbs" value="pasta" onclick="highlightButton(this)"
+    class="pasta-button"><span>Pasta</span></button>
+
+  <!-- potato-button -->
+  <button type="button" name="carbs" value="potato" onclick="highlightButton(this)"
+    class="potato-button"><span>Potato</span></button>
+
+
+
+
+
+
+
+  <!-- veggies -->
+  <h3 class="select-one-veggie">Select one Veggie</h3>
+
+  <div class="food-card-div-4-veggie"></div>
+
+  <!-- carrot-button -->
+  <button type="button" name="veggies" value="carrot" onclick="highlightButton(this)"
+    class="carrot-button"><span>Carrot</span></button>
+
+  <!-- broccoli-button -->
+  <button type="button" name="veggies" value="broccoli" onclick="highlightButton(this)"
+    class="broccoli-button"><span>Broccoli</span></button>
+
+  <!-- asparagus-button -->
+  <button type="button" name="veggies" value="asparagus" onclick="highlightButton(this)"
+    class="asparagus-button"><span>Asparagus</span></button>
 
 
 
 
 <!-- submit-form-button -->
 
-<div class="food-card-div-5-form-button">
+<input type="submit" value="MAKE MAGIC!" div class="food-card-div-5-form-button">
 
-  MAKE MAGIC!
 
 </div>
+
+
+</form>
+
+
+
+
+
+
+
 
 
 </section>
