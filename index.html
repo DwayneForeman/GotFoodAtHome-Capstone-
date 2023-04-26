@@ -115,7 +115,7 @@ Click<br>
 
 
 
-<form>
+<form id="form">
 
 
 
@@ -128,8 +128,7 @@ Click<br>
 
   <h3 class="enter-your-name">Enter Your Name</h3>
 
-
-  <input type="text" name="name" class="name-input-background">
+  <input type="text" name="first-name" class="name-input-background">
 
 
 
@@ -145,15 +144,15 @@ Click<br>
 
 
     <!-- chicken-button -->
-    <button type="button" name="meats" value="chicken" onclick="highlightButton(this)"
+    <button type="button" id="chicken" name="meats" value="chicken" onclick="highlightButton(this)"
       class="chicken-button"><span>Chicken</span></button>
 
     <!-- beef-button -->
-    <button type='button' name="meats" value="beef" onclick="highlightButton(this)"
+    <button type='button' id="beef" name="meats" value="beef" onclick="highlightButton(this)"
       class="beef-button"><span>Beef</span></button>
 
     <!-- fish-button -->
-    <button type="button" name="meats" value="fish" onclick="highlightButton(this)"
+    <button type="button" id="fish" name="meats" value="fish" onclick="highlightButton(this)"
       class="fish-button"><span>Fish</span></button>
 
   </div>
@@ -173,15 +172,15 @@ Click<br>
 
 
   <!-- rice-button -->
-  <button type="button" name="carbs" value="rice" onclick="highlightButton(this)"" class="
+  <button type="button" id="rice" name="carbs" value="rice" onclick="highlightButton(this)"" class="
     rice-button"><span>Rice</span></button>
 
   <!-- pasta-button -->
-  <button type="button" name="carbs" value="pasta" onclick="highlightButton(this)"
+  <button type="button" id="pasta" name="carbs" value="pasta" onclick="highlightButton(this)"
     class="pasta-button"><span>Pasta</span></button>
 
   <!-- potato-button -->
-  <button type="button" name="carbs" value="potato" onclick="highlightButton(this)"
+  <button type="button" id="potato" name="carbs" value="potato" onclick="highlightButton(this)"
     class="potato-button"><span>Potato</span></button>
 
 
@@ -196,15 +195,15 @@ Click<br>
   <div class="food-card-div-4-veggie"></div>
 
   <!-- carrot-button -->
-  <button type="button" name="veggies" value="carrot" onclick="highlightButton(this)"
+  <button type="button" id="carrot" name="veggies" value="carrot" onclick="highlightButton(this)"
     class="carrot-button"><span>Carrot</span></button>
 
   <!-- broccoli-button -->
-  <button type="button" name="veggies" value="broccoli" onclick="highlightButton(this)"
+  <button type="button" id="broccoli" name="veggies" value="broccoli" onclick="highlightButton(this)"
     class="broccoli-button"><span>Broccoli</span></button>
 
   <!-- asparagus-button -->
-  <button type="button" name="veggies" value="asparagus" onclick="highlightButton(this)"
+  <button type="button" id="asparagus" name="veggies" value="asparagus" onclick="highlightButton(this)"
     class="asparagus-button"><span>Asparagus</span></button>
 
 
@@ -212,7 +211,7 @@ Click<br>
 
 <!-- submit-form-button -->
 
-<input type="submit" value="MAKE MAGIC!" div class="food-card-div-5-form-button">
+<button type="submit" value="MAKE MAGIC!" div class="food-card-div-5-form-button">Make Magic!</button>
 
 
 </div>
@@ -226,13 +225,11 @@ Click<br>
 
 
 
-
-
 </section>
 
 
-
-<script src="main.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
 
 
 </body>
