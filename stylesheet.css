@@ -570,6 +570,19 @@ span {
   background-color: rgb(255, 98, 0);
   color: #E6E9F0;
 }
+
+
+.align-dom {
+  position: relative;
+  width: 493px;
+  height: 422px;
+  left: 510px;
+  top: 236px;
+  text-align: center;
+  background: #FFFFFF;
+  border-radius: 60px;
+  z-index: -1;
+}
    
 
 .chef-sleep:hover {
