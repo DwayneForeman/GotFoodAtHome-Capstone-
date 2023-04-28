@@ -7,17 +7,56 @@ body {
 
 }
 
+.recipe-card{
+
+/* recipe-card-text */
+
+
+  position: absolute;
+    width: 500px;
+    height: 752px;
+    left: 1090px;
+    top: 245px;
+  
+    background: #FDFBFB;
+    border-radius: 60px;
+    z-index: 1;
+
+}
+
+
+.recipe-text {
+
+  position: absolute;
+  width: 418px;
+  height: 260px;
+  left: 33px;
+  top: 232px;
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+
+  color: #240D3E;
+
+}
+
+
+
 
 /* header */
 
-header{
+header {
 
   position: absolute;
   width: 785px;
   height: 149px;
   left: 697px;
   top: 46px;
-  
+
   background: linear-gradient(90deg, rgba(255, 88, 88, 0.8) 0%, rgba(240, 152, 25, 0.8) 100%);
   border-radius: 25px;
 
@@ -25,8 +64,8 @@ header{
 
 
 
-h1{
-  
+h1 {
+
   position: absolute;
   width: 362px;
   height: 33px;
@@ -46,26 +85,26 @@ h1{
 
 
 
-.header-text{
+.header-text {
 
   position: absolute;
   width: 666px;
   height: 58px;
   left: 44px;
   top: 40px;
-  
+
   font-family: 'Jost';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
-  
+
   color: #FFFFFF;
 
 }
 
 
-.header-image{
+.header-image {
 
   position: absolute;
   left: 640px;
@@ -89,7 +128,7 @@ h1{
 
 }
 
-.div-1-logo{
+.div-1-logo {
 
   position: absolute;
   width: 233px;
@@ -101,26 +140,26 @@ h1{
 
 
 
-.instructions-title{
+.instructions-title {
 
   position: absolute;
   width: 168px;
   height: 32px;
   left: 66px;
   top: 294px;
-    
+
   font-family: 'Jost', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
   line-height: 35px;
-    
+
   color: #240D3E;
 
 }
 
 
-.instructions-text{
+.instructions-text {
 
   position: absolute;
   width: 216px;
@@ -140,7 +179,7 @@ h1{
 }
 
 
-.div-3-magic{
+.div-3-magic {
 
   position: absolute;
   width: 169px;
@@ -153,59 +192,67 @@ h1{
 
 /* section-3-waiting-card */
 
-.section-3-waiting-card{
-
+.section-3-waiting-card {
   position: relative;
   width: 493px;
   height: 752px;
   left: 510px;
   top: 236px;
-  
   background: #FFFFFF;
   border-radius: 60px;
+}
 
-  }
+.section-4-food-card {
+  /* remove the existing background */
+}
 
-.girl-phone{
+/* add a new style to .section-3-waiting-card */
+.section-3-waiting-card {
+  background: #FFFFFF;
+  border-radius: 60px;
+  position: relative;
+  width: 493px;
+  height: 752px;
+  left: 1090px;
+  top: 236px;
+}
+
+.girl-phone {
   position: absolute;
   width: 90px;
   height: 212px;
-  right: 1020px;
-  bottom: 665px;
+  right: 1010px;
+  bottom: 165px;
+
+}
+
+#form{
+
+  position: absolute;
+    width: 493px;
+    height: 252px;
+    left: 1100px;
+    bottom: 510px;
+    
 
 }
 
 
 
-  /* section-4-food-card */
 
-.section-4-food-card {
+.food-card-div-1-name {
 
-  position: absolute;
-  width: 493px;
-  height: 752px;
-  left: 1100px;
-  top: 236px;
-
-  background: #FFFFFF;
-  border-radius: 60px;
-
-}
-
-
-.food-card-div-1-name{
-
-  position: absolute;
+  position: relative;
   width: 198px;
   height: 31px;
   left: 428px;
   top: 266px;
-  
+
 }
 
 
 .name-input-background {
-    
+
   position: absolute;
   width: 383px;
   height: 56px;
@@ -224,23 +271,23 @@ h1{
 
 
 
-h3{
+h3 {
   font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 35px;
-    text-align: center;
-  
-    color: #240D3E;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+
+  color: #240D3E;
 }
 
 
 
 
- /* form text */
+/* form text */
 
-.enter-your-name{
+.enter-your-name {
 
   position: absolute;
   width: 198px;
@@ -252,19 +299,19 @@ h3{
 
 
 
-.select-one-meat{
+.select-one-meat {
 
   position: absolute;
-    width: 198px;
-    height: 31px;
-    right: 860px;
-    top: 150px;
+  width: 198px;
+  height: 31px;
+  right: 860px;
+  top: 150px;
 
 }
 
 
 
-.select-one-carb{
+.select-one-carb {
 
   position: absolute;
   width: 198px;
@@ -289,7 +336,7 @@ h3{
 
 
 
- /* food buttons */
+/* food buttons */
 
 
 .chicken-button {
@@ -313,7 +360,7 @@ h3{
 
 
 
-.beef-button{
+.beef-button {
 
   position: absolute;
   right: 785px;
@@ -499,7 +546,7 @@ span {
 }
 
 
- /* submit form button */
+/* submit form button */
 
 
 .food-card-div-5-form-button {
@@ -526,13 +573,13 @@ span {
 }
 
 
-.recipe-book{
+.recipe-book {
   position: absolute;
-  
+
   z-index: 1;
   width: 202px;
   height: 162px;
-  left: 740px;
+  left: 160px;
   top: 40px;
 }
 
@@ -542,21 +589,21 @@ span {
   z-index: 1;
   width: 265px;
   height: 359px;
-  left: 710px;
+  left: 140px;
   top: 340px;
 }
 
 
-.recipe-appear-here{
+.recipe-appear-here {
   position: absolute;
   text-align: center;
   width: 300px;
   height: 80px;
 
   z-index: 1;
-  left: 690px;
-  top: 210px;
-  
+  left: 100px;
+  top: 230px;
+
   font-family: 'jost';
   font-size: 26px;
   color: #240D3E;
@@ -572,18 +619,20 @@ span {
 }
 
 
-.align-dom {
-  position: relative;
-  width: 493px;
-  height: 422px;
-  left: 510px;
-  top: 236px;
-  text-align: center;
-  background: #FFFFFF;
-  border-radius: 60px;
-  z-index: -1;
+
+
+#food-card-background{
+  position: absolute;
+    width: 493px;
+    height: 767px;
+    left: 510px;
+    top: 236px;
+  
+    background: #ffffff;
+    border-radius: 60px;
+
 }
-   
+
 
 .chef-sleep:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */

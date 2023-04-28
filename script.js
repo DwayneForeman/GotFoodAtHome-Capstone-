@@ -15,7 +15,7 @@ const form = document.getElementById("form");
 
 const formData = {};
 let selectedMeat = null;
-let selectedCarb = null;
+let selectedCarbs = null;
 let selectedVeggie = null;
 
 const meatButtons = document.querySelectorAll('button[name="meats"]');
@@ -61,11 +61,24 @@ form.addEventListener("submit", (event) => {
     .post("http://localhost:3000/submit-form", formData)
     .then((response) => {
       console.log(response.data);
-      document.querySelector(
-        ".section-3-waiting-card"
-      ).innerHTML = `<section class="align-dom"><h3>${JSON.stringify(
-        response.data
-      )}<h3> Lets cook man</section>`;
+      const removeElement = document.querySelector(".section-3-waiting-card");
+      removeElement.remove();
+
+      const formattedInstructions = response.data.instructions
+        .replace(/\n/g, "") // remove newline characters
+        .replace(/\}/g, "") // remove closing curly brace
+        .replace(/\t/g, "") // replace tabs with line breaks
+        .replace(/:/g, "<br><br>");
+
+      const instructions = document.createElement("div");
+      instructions.innerHTML = formattedInstructions;
+      instructions.classList.add("recipe-text"); // apply CSS class
+
+      const recipeCard = document.createElement("div");
+      recipeCard.classList.add("recipe-card");
+      recipeCard.appendChild(instructions);
+
+      document.body.appendChild(recipeCard);
     })
     .catch((error) => {
       console.log(error);
