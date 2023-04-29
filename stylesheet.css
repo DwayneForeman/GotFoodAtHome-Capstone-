@@ -28,20 +28,80 @@ body {
 .recipe-text {
 
   position: absolute;
-  width: 418px;
+  width: 400px;
   height: 260px;
-  left: 33px;
-  top: 232px;
+  left: 46px;
+  top: 182px;
 
   font-family: 'Jost';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 30px;
   text-align: center;
 
   color: #240D3E;
 
+}
+
+.recipe-title{
+  position: absolute;
+    width: 418px;
+    height: 260px;
+    right: 50px;
+    top: 52px;
+
+  font-family: 'Jost';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+  
+    color: #240D3E;
+    z-index: 1;
+}
+
+.recipe-signiture {
+  position: absolute;
+    width: 167px;
+    height: 74px;
+    left: 164px;
+    top: 642px;
+  
+    font-family: 'Sassy Frass', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 35px;
+    text-align: center;
+  
+    background: linear-gradient(90deg, #FF8177 0%, #FF867A 0%, #FF8C7F 21%, #F99185 52%, #CF556C 78%, #B12A5B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.createdBy-signiture {
+  position: absolute;
+  width: 167px;
+  height: 74px;
+  left: 164px;
+  top: 620px;
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+
+  background: linear-gradient(90deg, #FF8177 0%, #FF867A 0%, #FF8C7F 21%, #F99185 52%, #CF556C 78%, #B12A5B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 
@@ -139,6 +199,15 @@ h1 {
 }
 
 
+#chat-button{
+
+  position: absolute;
+  right: 445px;
+  bottom: 797px;
+
+}
+
+
 
 .instructions-title {
 
@@ -222,7 +291,7 @@ h1 {
   width: 90px;
   height: 212px;
   right: 1010px;
-  bottom: 165px;
+  bottom: 670px;
 
 }
 
@@ -230,14 +299,23 @@ h1 {
 
   position: absolute;
     width: 493px;
-    height: 252px;
-    left: 1100px;
-    bottom: 510px;
-    
+    height: 767px;
+    left: 510px;
+    top: 236px;
+  
+    background: #ffffff;
+    border-radius: 60px;
 
 }
 
+#allButtonInForm{
+  position: absolute;
+    width: 493px;
+    height: 767px;
+    left: 600px;
+    bottom: 3px;
 
+}
 
 
 .food-card-div-1-name {
@@ -635,10 +713,10 @@ span {
 
 
 .chef-sleep:hover {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
+  /* Start shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.5s;
 
-  /* When the animation is finished, start again */
+  /* When animation is d0ne, start again */
   animation-iteration-count: infinite;
 }
 

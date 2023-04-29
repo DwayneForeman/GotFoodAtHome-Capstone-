@@ -389,3 +389,23 @@ app.post("/submit-form", function (request, response) {
   console.log(responseData);
   response.status(200).send(responseData);
 });
+
+// const cookingTips = [
+//   "Always read a recipe in full before starting to cook.",
+//   "Use room temperature ingredients when baking.",
+//   "Don't overcrowd the pan when sautéing.",
+//   "Don't be afraid to experiment with spices and seasonings.",
+//   "Use a meat thermometer to ensure that meat is cooked to the proper temperature.",
+//   "When grilling, let the meat rest for a few minutes after cooking to allow the juices to redistribute.",
+//   "Cook with high-quality ingredients for the best flavor.",
+//   "Use a sharp knife to make chopping and slicing easier.",
+//   "Don't forget to preheat your oven before baking.",
+//   "Clean as you go to make cleanup easier.",
+// ];
+
+// console.log(randomTip);
+
+// app.get("/cooking-tips", function (request, response) {
+//   const randomTip = cookingTips[Math.floor(Math.random() * cookingTips.length)];
+//   response.status(200).send(randomTip);
+// });

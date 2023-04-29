@@ -65,18 +65,37 @@ form.addEventListener("submit", (event) => {
       removeElement.remove();
 
       const formattedInstructions = response.data.instructions
-        .replace(/\n/g, "") // remove newline characters
-        .replace(/\}/g, "") // remove closing curly brace
+        .replace(/\n/g, "") // remove newline character
+        .replace(/\}/g, "") // remove th curly brace
         .replace(/\t/g, "") // replace tabs with line breaks
-        .replace(/:/g, "<br><br>");
+        .replace(/:/g, "<br><br>"); // replace colon with 2 breaks
 
       const instructions = document.createElement("div");
       instructions.innerHTML = formattedInstructions;
-      instructions.classList.add("recipe-text"); // apply CSS class
+      instructions.classList.add("recipe-text"); // apply CSS to thE class
+
+      const createdBy = document.createElement("p");
+      createdBy.innerHTML = "Created by:";
+      createdBy.classList.add("createdBy-signiture");
+
+      const formattedTitle = response.data.mealName;
+
+      const formattedName = response.data.name;
+
+      const name = document.createElement("p");
+      name.innerHTML = formattedName;
+      name.classList.add("recipe-signiture");
+
+      const title = document.createElement("p");
+      title.innerHTML = formattedTitle;
+      title.classList.add("recipe-title");
 
       const recipeCard = document.createElement("div");
       recipeCard.classList.add("recipe-card");
       recipeCard.appendChild(instructions);
+      recipeCard.appendChild(title);
+      recipeCard.appendChild(name);
+      recipeCard.appendChild(createdBy);
 
       document.body.appendChild(recipeCard);
     })
@@ -84,3 +103,7 @@ form.addEventListener("submit", (event) => {
       console.log(error);
     });
 });
+
+// axios.get("http://localhost:3000/cooking-tips").then((response) => {
+//   console.log(response);
+// });
