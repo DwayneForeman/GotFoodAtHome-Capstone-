@@ -7,6 +7,22 @@ body {
 
 }
 
+.pop-up-window {
+
+
+  position: absolute;
+  width: 500px;
+  height: 752px;
+  left: 1090px;
+  top: 245px;
+
+  background: #FDFBFB;
+  border-radius: 60px;
+  z-index: 1;
+
+}
+
+
 .recipe-card{
 
 /* recipe-card-text */
@@ -205,6 +221,55 @@ h1 {
   right: 445px;
   bottom: 797px;
 
+  animation: myAnim 20s ease 0s infinite normal forwards;
+
+}
+
+
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 

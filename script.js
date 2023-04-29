@@ -104,6 +104,14 @@ form.addEventListener("submit", (event) => {
     });
 });
 
-// axios.get("http://localhost:3000/cooking-tips").then((response) => {
-//   console.log(response);
-// });
+axios.get("http://localhost:3000/cooking-tips").then((response) => {
+  const chatButton = document.querySelector("#chat-button");
+  chatButton.addEventListener("click", () => {
+    const popUpWindow = document.createElement("p");
+    popUpWindow.innerHTML = response.data;
+    popUpWindow.classList.add("pop-up-window");
+    document.body.appendChild(popUpWindow); // add the pop-up window to the DOM
+  });
+
+  //console.log(response);
+});
