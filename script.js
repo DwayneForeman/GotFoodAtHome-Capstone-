@@ -67,6 +67,7 @@ form.addEventListener("submit", async (event) => {
     .then((response) => {
       console.log(response.data);
       const removeElement = document.querySelector(".section-3-waiting-card");
+      //waiting-card
       if (removeElement) {
         removeElement.remove();
       }

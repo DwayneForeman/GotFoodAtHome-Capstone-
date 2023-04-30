@@ -1,6 +1,3 @@
-/* background */
-
-
 body {
 
   background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);
@@ -26,39 +23,39 @@ body {
 .tips-title{
 
   position: absolute;
-    width: 163px;
-    height: 53px;
-    left: 150px;
-    top: 45px;
-  
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 52px;
-    text-align: center;
-  
-    color: #240D3E;
+  width: 163px;
+  height: 53px;
+  left: 150px;
+  top: 45px;
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 52px;
+  text-align: center;
+
+  color: #240D3E;
 
 }
 
 
 .tips-text {
 
-position: absolute;
-width: 400px;
-height: 260px;
-left: 46px;
-top: 116px;
+  position: absolute;
+  width: 400px;
+  height: 260px;
+  left: 46px;
+  top: 116px;
 
-font-family: 'Jost';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 30px;
-text-align: center;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
 
-color: #240D3E;
+  color: #240D3E;
 
 }
 
@@ -89,18 +86,15 @@ color: #240D3E;
 
 .recipe-card{
 
-/* recipe-card-text */
-
-
   position: absolute;
-    width: 500px;
-    height: 752px;
-    left: 1090px;
-    top: 245px;
-  
-    background: #FDFBFB;
-    border-radius: 60px;
-    z-index: 1;
+  width: 500px;
+  height: 752px;
+  left: 1090px;
+  top: 245px;
+
+  background: #FDFBFB;
+  border-radius: 60px;
+  z-index: 1;
 
 }
 
@@ -125,42 +119,46 @@ color: #240D3E;
 }
 
 .recipe-title{
+
   position: absolute;
-    width: 418px;
-    height: 260px;
-    right: 50px;
-    top: 52px;
+  width: 418px;
+  height: 260px;
+  right: 50px;
+  top: 52px;
 
   font-family: 'Jost';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 35px;
-    text-align: center;
-  
-    color: #240D3E;
-    z-index: 1;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+
+  color: #240D3E;
+  z-index: 1;
+
 }
 
 .recipe-signiture {
+
   position: absolute;
-    width: 167px;
-    height: 74px;
-    left: 164px;
-    top: 642px;
+  width: 167px;
+  height: 74px;
+  left: 164px;
+  top: 642px;
   
-    font-family: 'Sassy Frass', cursive;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 46px;
-    line-height: 35px;
-    text-align: center;
-  
-    background: linear-gradient(90deg, #FF8177 0%, #FF867A 0%, #FF8C7F 21%, #F99185 52%, #CF556C 78%, #B12A5B 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+  font-family: 'Sassy Frass', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 35px;
+  text-align: center;
+
+  background: linear-gradient(90deg, #FF8177 0%, #FF867A 0%, #FF8C7F 21%, #F99185 52%, #CF556C 78%, #B12A5B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
 }
 
 .createdBy-signiture {
@@ -182,12 +180,13 @@ color: #240D3E;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
 }
 
 
 
 
-/* header */
+
 
 header {
 
@@ -253,9 +252,9 @@ h1 {
 
 
 
-/* section-1-sidebar */
 
-.section-1-sidebar {
+
+.sidebar {
 
   position: absolute;
   width: 297px;
@@ -291,6 +290,7 @@ h1 {
 
 
 @keyframes myAnim {
+
   0% {
     animation-timing-function: ease-in;
     opacity: 1;
@@ -334,6 +334,7 @@ h1 {
     opacity: 1;
     transform: translateY(0px);
   }
+
 }
 
 
@@ -388,9 +389,10 @@ h1 {
 }
 
 
-/* section-3-waiting-card */
 
-.section-3-waiting-card {
+
+.waiting-card {
+
   position: relative;
   width: 493px;
   height: 752px;
@@ -398,10 +400,12 @@ h1 {
   top: 236px;
   background: #FFFFFF;
   border-radius: 60px;
+
 }
 
 
 .section-4-waiting-card {
+
   position: absolute;
   width: 500px;
   height: 752px;
@@ -411,6 +415,7 @@ h1 {
   background: #FDFBFB;
   border-radius: 60px;
   z-index: 1;
+
 }
 
 
@@ -419,8 +424,9 @@ h1 {
   /* remove the existing background */
 }
 
-/* add a new style to .section-3-waiting-card */
-.section-3-waiting-card {
+/* add a new style to .waiting-card */
+.waiting-card {
+
   background: #FFFFFF;
   border-radius: 60px;
   position: relative;
@@ -428,6 +434,7 @@ h1 {
   height: 752px;
   left: 1090px;
   top: 236px;
+
 }
 
 .girl-phone {
@@ -488,8 +495,6 @@ h1 {
   font-size: 35px;
 
 }
-
-
 
 
 
@@ -556,10 +561,7 @@ h3 {
 }
 
 
-
-
 /* food buttons */
-
 
 .chicken-button {
   position: absolute;
@@ -860,7 +862,7 @@ span {
   /* Start shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.5s;
 
-  /* When animation is d0ne, start again */
+  /* When animation is done, start again */
   animation-iteration-count: infinite;
 }
 
