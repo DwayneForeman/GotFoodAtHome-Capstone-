@@ -14,22 +14,13 @@ const cors = require("cors");
 //Now we need to use the new varable we created, invoke it() and equal it to a new variable. This is typically named app
 const app = express();
 
-//const bodyParser = require("body-parser");
-//const path = require("path");
-
 //Now we need to setup our newly created sever to accept json invoked. J son is a method of the express class therefore, we use DOT notation
-// Also, notice we use .use() which is also a method of the express class. Think of it as we actually need to use this for our app
 app.use(express.json());
 
 //Finally, we need to also "use" cors invoked by using the
 app.use(cors());
 
-//app.use(bodyParser.json());
-
-//app.use(bodyParser.urlencoded({ extended: true }));
-
-//app.use(express.static(path.join(__dirname, "server")));
-
+// Let;s listen to the app to make sure we are connected on port 3k
 app.listen(3000, () => console.log("Take us to warp 3000"));
 
 //------------------------------MEAL OPTIONS----------------------------------------
@@ -405,8 +396,7 @@ const cookingTips = [
 
 //console.log(randomTip);
 
-const randomTip = cookingTips[Math.floor(Math.random() * cookingTips.length)];
-
 app.get("/cooking-tips", function (request, response) {
+  const randomTip = cookingTips[Math.floor(Math.random() * cookingTips.length)];
   response.status(200).send(randomTip);
 });

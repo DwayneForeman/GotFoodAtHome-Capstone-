@@ -1,12 +1,17 @@
 function highlightButton(button) {
-  // Unhighlight all buttons in the group
-  var groupButtons = document.getElementsByName(button.name);
-  for (var i = 0; i < groupButtons.length; i++) {
-    groupButtons[i].classList.remove("highlighted");
-  }
+  if (button.classList.contains("highlighted")) {
+    // If button is already highlighted, remove the highlight
+    button.classList.remove("highlighted");
+  } else {
+    // Unhighlight all buttons in the group
+    var groupButtons = document.getElementsByName(button.name);
+    for (var i = 0; i < groupButtons.length; i++) {
+      groupButtons[i].classList.remove("highlighted");
+    }
 
-  // Highlight the clicked button
-  button.classList.add("highlighted");
+    // Highlight the clicked button
+    button.classList.add("highlighted");
+  }
 }
 
 // Get the form
@@ -47,7 +52,7 @@ firstNameInput.addEventListener("input", (event) => {
   formData.name = event.target.value;
 });
 
-form.addEventListener("submit", (event) => {
+form.addEventListener("submit", async (event) => {
   event.preventDefault();
   const clickedButton = event.target.activeElement;
 
@@ -57,12 +62,14 @@ form.addEventListener("submit", (event) => {
 
   console.log(formData);
 
-  axios
+  await axios
     .post("http://localhost:3000/submit-form", formData)
     .then((response) => {
       console.log(response.data);
       const removeElement = document.querySelector(".section-3-waiting-card");
-      removeElement.remove();
+      if (removeElement) {
+        removeElement.remove();
+      }
 
       const formattedInstructions = response.data.instructions
         .replace(/\n/g, "") // remove newline character
@@ -135,9 +142,11 @@ form.addEventListener("submit", (event) => {
     });
 });
 
-axios.get("http://localhost:3000/cooking-tips").then((response) => {
-  const chatButton = document.querySelector("#chat-button");
-  chatButton.addEventListener("click", () => {
+const chatButton = document.querySelector("#chat-button");
+
+chatButton.addEventListener("click", async () => {
+  axios.get("http://localhost:3000/cooking-tips").then((response) => {
+    console.log(response);
     const tipsText = document.createElement("p");
     tipsText.innerHTML = response.data;
     tipsText.classList.add("tips-text");
@@ -166,6 +175,4 @@ axios.get("http://localhost:3000/cooking-tips").then((response) => {
 
     document.body.appendChild(popUpWindow); // adding the pop-up window to the DOM
   });
-
-  //console.log(response);
 });
