@@ -11,14 +11,78 @@ body {
 
 
   position: absolute;
-  width: 500px;
-  height: 752px;
-  left: 1090px;
-  top: 245px;
+  width: 468px;
+  height: 229px;
+  left: 822px;
+  top: 256px;
 
-  background: #FDFBFB;
-  border-radius: 60px;
+  background: linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%);
+  box-shadow: 0px 4px 4px rgba(253, 160, 133, 0.1);
+  border-radius: 25px;
   z-index: 1;
+
+}
+
+.tips-title{
+
+  position: absolute;
+    width: 163px;
+    height: 53px;
+    left: 150px;
+    top: 45px;
+  
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+    text-align: center;
+  
+    color: #240D3E;
+
+}
+
+
+.tips-text {
+
+position: absolute;
+width: 400px;
+height: 260px;
+left: 46px;
+top: 116px;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+text-align: center;
+
+color: #240D3E;
+
+}
+
+.tips-image {
+
+  position: absolute;
+  left: 196px;
+  top: 26px;
+
+}
+
+.refresh-button {
+
+  position: absolute;
+  left: 236px;
+  bottom: 126px;
+
+}
+
+.x-button {
+
+  position: absolute;
+  left: 416px;
+  top: 20px;
 
 }
 
@@ -335,6 +399,21 @@ h1 {
   background: #FFFFFF;
   border-radius: 60px;
 }
+
+
+.section-4-waiting-card {
+  position: absolute;
+  width: 500px;
+  height: 752px;
+  left: 1090px;
+  top: 245px;
+
+  background: #FDFBFB;
+  border-radius: 60px;
+  z-index: 1;
+}
+
+
 
 .section-4-food-card {
   /* remove the existing background */

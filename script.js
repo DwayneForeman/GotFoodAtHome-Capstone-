@@ -90,15 +90,46 @@ form.addEventListener("submit", (event) => {
       title.innerHTML = formattedTitle;
       title.classList.add("recipe-title");
 
+      const refreshButton = document.createElement("img");
+      refreshButton.src = "./images/refresh-button.png";
+      refreshButton.classList.add("refresh-button");
+
+      const recipeBook = document.createElement("img");
+      recipeBook.src = "./images/recipe-book.png";
+      recipeBook.alt = "recipe-book";
+      recipeBook.classList.add("recipe-book");
+
+      const recipeAppearHere = document.createElement("p");
+      recipeAppearHere.textContent = "Your Recipe Will Appear Here";
+      recipeAppearHere.classList.add("recipe-appear-here");
+
+      const chefSleep = document.createElement("img");
+      chefSleep.src = "./images/chef-sleep-campfire.png";
+      chefSleep.alt = "chef-sleep";
+      chefSleep.classList.add("chef-sleep");
+
+      const newCard = document.createElement("div");
+      newCard.classList.add("section-4-waiting-card");
+      newCard.appendChild(recipeBook);
+      newCard.appendChild(recipeAppearHere);
+      newCard.appendChild(chefSleep);
+
+      refreshButton.addEventListener("click", () => {
+        recipeCard.remove();
+        document.body.appendChild(newCard);
+      });
+
       const recipeCard = document.createElement("div");
       recipeCard.classList.add("recipe-card");
       recipeCard.appendChild(instructions);
       recipeCard.appendChild(title);
       recipeCard.appendChild(name);
       recipeCard.appendChild(createdBy);
+      recipeCard.appendChild(refreshButton);
 
       document.body.appendChild(recipeCard);
     })
+
     .catch((error) => {
       console.log(error);
     });
@@ -107,10 +138,33 @@ form.addEventListener("submit", (event) => {
 axios.get("http://localhost:3000/cooking-tips").then((response) => {
   const chatButton = document.querySelector("#chat-button");
   chatButton.addEventListener("click", () => {
-    const popUpWindow = document.createElement("p");
-    popUpWindow.innerHTML = response.data;
+    const tipsText = document.createElement("p");
+    tipsText.innerHTML = response.data;
+    tipsText.classList.add("tips-text");
+
+    const tipsTitle = document.createElement("p");
+    tipsTitle.innerHTML = "TIPS";
+    tipsTitle.classList.add("tips-title");
+
+    const tipsImage = document.createElement("img");
+    tipsImage.src = "./images/notification.png";
+    tipsImage.classList.add("tips-image");
+
+    const xButton = document.createElement("img");
+    xButton.src = "./images/xButton.png";
+    xButton.classList.add("x-button");
+    xButton.addEventListener("click", function () {
+      popUpWindow.remove();
+    });
+
+    const popUpWindow = document.createElement("div");
     popUpWindow.classList.add("pop-up-window");
-    document.body.appendChild(popUpWindow); // add the pop-up window to the DOM
+    popUpWindow.appendChild(tipsText);
+    popUpWindow.appendChild(tipsTitle);
+    popUpWindow.appendChild(tipsImage);
+    popUpWindow.appendChild(xButton);
+
+    document.body.appendChild(popUpWindow); // adding the pop-up window to the DOM
   });
 
   //console.log(response);
