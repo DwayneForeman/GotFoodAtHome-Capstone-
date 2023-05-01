@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/DwayneForeman/GotFoodAtHome-Capstone-/issues"
   },
-  "homepage": "https://github.com/DwayneForeman/GotFoodAtHome-Capstone-#readme"
+  "homepage": "https://github.com/DwayneForeman/GotFoodAtHome-Capstone-#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "pg": "^8.10.0",
+    "sequelize": "^6.31.0"
+  }
 }

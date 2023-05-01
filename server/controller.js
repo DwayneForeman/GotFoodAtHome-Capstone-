@@ -1,5 +1,19 @@
 //const { request, response } = require("express");
 
+require("dotenv").config();
+const { CONNECTION_STRING } = process.env;
+const { request, response } = require("express");
+const Sequelize = require("Sequelize");
+
+const sequelize = new Sequelize(CONNECTION_STRING, {
+  dialect: "postgres",
+  dialectOptions: {
+    ssl: {
+      rejectUnauthorized: false,
+    },
+  },
+});
+
 let mealOptionsArray = [
   [
     "Chicken",
@@ -331,19 +345,6 @@ let mealOptionsArray = [
   ],
 ];
 
-const cookingTips = [
-  "Always read a recipe in full before starting to cook.",
-  "Use room temperature ingredients when baking.",
-  "Don't overcrowd the pan when sautéing.",
-  "Don't be afraid to experiment with spices and seasonings.",
-  "Use a meat thermometer to ensure that meat is cooked to the proper temperature.",
-  "When grilling, let the meat rest for a few minutes after cooking to allow the juices to redistribute.",
-  "Cook with high-quality ingredients for the best flavor.",
-  "Use a sharp knife to make chopping and slicing easier.",
-  "Don't forget to preheat your oven before baking.",
-  "Clean as you go to make cleanup easier.",
-];
-
 module.exports = {
   submitForm: (request, response) => {
     const { name, meats, carbs, veggies } = request.body;
@@ -369,8 +370,25 @@ module.exports = {
   },
 
   getTips: (request, response) => {
-    const randomTip =
-      cookingTips[Math.floor(Math.random() * cookingTips.length)];
-    response.status(200).send(randomTip);
+    sequelize.query(`SELECT * from cooking_tips`).then(([dbResult]) => {
+      const randomTip = dbResult[Math.floor(Math.random() * dbResult.length)];
+      const { name } = randomTip;
+      response.status(200).send(name);
+    });
   },
 };
+
+// Replaced the SQL Database with the internal array/database below
+// Database can be found in bit.io DwayneForeman/WeHaveFoodAtHomeApp
+// const cookingTips = [
+//   "Always read a recipe in full before starting to cook.",
+//   "Use room temperature ingredients when baking.",
+//   "Don't overcrowd the pan when sautéing.",
+//   "Don't be afraid to experiment with spices and seasonings.",
+//   "Use a meat thermometer to ensure that meat is cooked to the proper temperature.",
+//   "When grilling, let the meat rest for a few minutes after cooking to allow the juices to redistribute.",
+//   "Cook with high-quality ingredients for the best flavor.",
+//   "Use a sharp knife to make chopping and slicing easier.",
+//   "Don't forget to preheat your oven before baking.",
+//   "Clean as you go to make cleanup easier.",
+// ];

@@ -1,0 +1,913 @@
+body {
+
+  background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);
+
+}
+
+.pop-up-window {
+
+
+  position: absolute;
+  width: 468px;
+  height: 229px;
+  left: 822px;
+  top: 256px;
+
+  background: linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%);
+  box-shadow: 0px 4px 4px rgba(253, 160, 133, 0.1);
+  border-radius: 25px;
+  z-index: 1;
+
+}
+
+.tips-title{
+
+  position: absolute;
+  width: 163px;
+  height: 53px;
+  left: 150px;
+  top: 45px;
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 52px;
+  text-align: center;
+
+  color: #240D3E;
+
+}
+
+
+.tips-text {
+
+  position: absolute;
+  width: 400px;
+  height: 260px;
+  left: 46px;
+  top: 116px;
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #240D3E;
+
+}
+
+.tips-image {
+
+  position: absolute;
+  left: 196px;
+  top: 26px;
+
+}
+
+.refresh-button {
+
+  position: absolute;
+  left: 236px;
+  bottom: 126px;
+
+}
+
+.x-button {
+
+  position: absolute;
+  left: 416px;
+  top: 20px;
+
+}
+
+
+.recipe-card{
+
+  position: absolute;
+  width: 500px;
+  height: 752px;
+  left: 1090px;
+  top: 245px;
+
+  background: #FDFBFB;
+  border-radius: 60px;
+  z-index: 1;
+
+}
+
+
+.recipe-text {
+
+  position: absolute;
+  width: 400px;
+  height: 260px;
+  left: 46px;
+  top: 182px;
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #240D3E;
+
+}
+
+.recipe-title{
+
+  position: absolute;
+  width: 418px;
+  height: 260px;
+  right: 50px;
+  top: 52px;
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+
+  color: #240D3E;
+  z-index: 1;
+
+}
+
+.recipe-signiture {
+
+  position: absolute;
+  width: 167px;
+  height: 74px;
+  left: 164px;
+  top: 642px;
+  
+  font-family: 'Sassy Frass', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 35px;
+  text-align: center;
+
+  background: linear-gradient(90deg, #FF8177 0%, #FF867A 0%, #FF8C7F 21%, #F99185 52%, #CF556C 78%, #B12A5B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+}
+
+.createdBy-signiture {
+  position: absolute;
+  width: 167px;
+  height: 74px;
+  left: 164px;
+  top: 620px;
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+
+  background: linear-gradient(90deg, #FF8177 0%, #FF867A 0%, #FF8C7F 21%, #F99185 52%, #CF556C 78%, #B12A5B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+}
+
+
+
+
+
+
+header {
+
+  position: absolute;
+  width: 785px;
+  height: 149px;
+  left: 697px;
+  top: 46px;
+
+  background: linear-gradient(90deg, rgba(255, 88, 88, 0.8) 0%, rgba(240, 152, 25, 0.8) 100%);
+  border-radius: 25px;
+
+}
+
+
+
+h1 {
+
+  position: absolute;
+  width: 362px;
+  height: 33px;
+  left: 38px;
+  top: 1px;
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+}
+
+
+
+.header-text {
+
+  position: absolute;
+  width: 666px;
+  height: 58px;
+  left: 44px;
+  top: 40px;
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #FFFFFF;
+
+}
+
+
+.header-image {
+
+  position: absolute;
+  left: 640px;
+
+}
+
+
+
+
+
+.sidebar {
+
+  position: absolute;
+  width: 297px;
+  height: 1024px;
+  left: 0px;
+  top: 0px;
+
+  background: #FFFFFF;
+  border-radius: 0px 0px 15px 15px;
+
+}
+
+.div-1-logo {
+
+  position: absolute;
+  width: 233px;
+  height: 182px;
+  left: 32px;
+  top: 63px;
+
+}
+
+
+#chat-button{
+
+  position: absolute;
+  right: 445px;
+  bottom: 797px;
+
+  animation: myAnim 20s ease 0s infinite normal forwards;
+
+}
+
+
+@keyframes myAnim {
+
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+}
+
+
+
+.instructions-title {
+
+  position: absolute;
+  width: 168px;
+  height: 32px;
+  left: 66px;
+  top: 294px;
+
+  font-family: 'Jost', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: #240D3E;
+
+}
+
+
+.instructions-text {
+
+  position: absolute;
+  width: 216px;
+  height: 260px;
+  left: 33px;
+  top: 352px;
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+
+  color: #240D3E;
+
+}
+
+
+.div-3-magic {
+
+  position: absolute;
+  width: 169px;
+  height: 289px;
+  left: 64px;
+  top: 681px;
+
+}
+
+
+
+
+.waiting-card {
+
+  position: relative;
+  width: 493px;
+  height: 752px;
+  left: 510px;
+  top: 236px;
+  background: #FFFFFF;
+  border-radius: 60px;
+
+}
+
+
+.section-4-waiting-card {
+
+  position: absolute;
+  width: 500px;
+  height: 752px;
+  left: 1090px;
+  top: 245px;
+
+  background: #FDFBFB;
+  border-radius: 60px;
+  z-index: 1;
+
+}
+
+
+
+.section-4-food-card {
+  /* remove the existing background */
+}
+
+/* add a new style to .waiting-card */
+.waiting-card {
+
+  background: #FFFFFF;
+  border-radius: 60px;
+  position: relative;
+  width: 493px;
+  height: 752px;
+  left: 1090px;
+  top: 236px;
+
+}
+
+.girl-phone {
+  position: absolute;
+  width: 90px;
+  height: 212px;
+  right: 1010px;
+  bottom: 670px;
+
+}
+
+#form{
+
+  position: absolute;
+    width: 493px;
+    height: 767px;
+    left: 510px;
+    top: 236px;
+  
+    background: #ffffff;
+    border-radius: 60px;
+
+}
+
+#allButtonInForm{
+  position: absolute;
+    width: 493px;
+    height: 767px;
+    left: 600px;
+    bottom: 3px;
+
+}
+
+
+.food-card-div-1-name {
+
+  position: relative;
+  width: 198px;
+  height: 31px;
+  left: 428px;
+  top: 266px;
+
+}
+
+
+.name-input-background {
+
+  position: absolute;
+  width: 383px;
+  height: 56px;
+  right: 650px;
+  top: 95px;
+
+  background: #E6E9F0;
+  border-radius: 20px;
+
+  font-family: 'Jost';
+  font-size: 35px;
+
+}
+
+
+
+h3 {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+
+  color: #240D3E;
+}
+
+
+
+
+/* form text */
+
+.enter-your-name {
+
+  position: absolute;
+  width: 198px;
+  height: 31px;
+  right: 860px;
+  top: 30px;
+
+}
+
+
+
+.select-one-meat {
+
+  position: absolute;
+  width: 198px;
+  height: 31px;
+  right: 860px;
+  top: 150px;
+
+}
+
+
+
+.select-one-carb {
+
+  position: absolute;
+  width: 198px;
+  height: 31px;
+  right: 862px;
+  top: 310px;
+
+}
+
+
+
+.select-one-veggie {
+
+  position: absolute;
+  width: 198px;
+  height: 31px;
+  right: 860px;
+  top: 470px;
+
+}
+
+
+/* food buttons */
+
+.chicken-button {
+  position: absolute;
+  right: 920px;
+  top: 213px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 116px;
+  height: 102px;
+  background: url(/images/chicken-icon.png);
+  background-color: rgba(253, 160, 133, 0.1);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+
+
+
+.beef-button {
+
+  position: absolute;
+  right: 785px;
+  top: 213px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 116px;
+  height: 102px;
+  background: url(/images/beef-icon.png);
+  background-color: rgba(253, 160, 133, 0.1);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+
+
+
+.fish-button {
+
+  position: absolute;
+  right: 650px;
+  top: 213px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 116px;
+  height: 102px;
+  background: url(/images/fish-icon.png);
+  background-color: rgba(253, 160, 133, 0.1);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  border-radius: 8px;
+  border: none;
+
+}
+
+
+
+.rice-button {
+
+  position: absolute;
+  right: 920px;
+  top: 375px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 116px;
+  height: 102px;
+  background: url(/images/rice-icon.png);
+  background-color: rgba(253, 160, 133, 0.1);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  border-radius: 8px;
+  border: none;
+
+}
+
+
+
+.pasta-button {
+
+  position: absolute;
+  right: 785px;
+  top: 375px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 116px;
+  height: 102px;
+  background: url(/images/pasta-icon.png);
+  background-color: rgba(253, 160, 133, 0.1);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  border-radius: 8px;
+  border: none;
+
+}
+
+
+.potato-button {
+
+  position: absolute;
+  right: 650px;
+  top: 375px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 116px;
+  height: 102px;
+  background: url(/images/potato-icon.png);
+  background-color: rgba(253, 160, 133, 0.1);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  border-radius: 8px;
+  border: none;
+
+}
+
+
+.carrot-button {
+
+  position: absolute;
+  right: 920px;
+  top: 535px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 116px;
+  height: 102px;
+  background: url(/images/carrot-icon.png);
+  background-color: rgba(253, 160, 133, 0.1);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  border-radius: 8px;
+  border: none;
+
+}
+
+
+
+.broccoli-button {
+
+  position: absolute;
+  right: 785px;
+  top: 535px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 116px;
+  height: 102px;
+  background: url(/images/broccoli-icon.png);
+  background-color: rgba(253, 160, 133, 0.1);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  border-radius: 8px;
+  border: none;
+
+}
+
+
+
+.asparagus-button {
+
+  position: absolute;
+  right: 650px;
+  top: 535px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 116px;
+  height: 102px;
+  background: url(/images/asparagues-icon.png);
+  background-color: rgba(253, 160, 133, 0.1);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  border-radius: 8px;
+  border: none;
+
+}
+
+
+
+span {
+  margin-bottom: 12px;
+}
+
+
+/* submit form button */
+
+
+.food-card-div-5-form-button {
+
+  position: absolute;
+  width: 198px;
+  height: 66px;
+  right: 740px;
+  top: 680px;
+
+  background: linear-gradient(90deg, #ED6EA0 0%, #EC8C69 100%);
+  border-radius: 25px;
+
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 64px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+}
+
+
+.recipe-book {
+  position: absolute;
+
+  z-index: 1;
+  width: 202px;
+  height: 162px;
+  left: 160px;
+  top: 40px;
+}
+
+.chef-sleep {
+  position: absolute;
+
+  z-index: 1;
+  width: 265px;
+  height: 359px;
+  left: 140px;
+  top: 340px;
+}
+
+
+.recipe-appear-here {
+  position: absolute;
+  text-align: center;
+  width: 300px;
+  height: 80px;
+
+  z-index: 1;
+  left: 100px;
+  top: 230px;
+
+  font-family: 'jost';
+  font-size: 26px;
+  color: #240D3E;
+  font-weight: bolder;
+}
+
+
+
+
+.highlighted {
+  background-color: rgb(255, 98, 0);
+  color: #E6E9F0;
+}
+
+
+
+
+#food-card-background{
+  position: absolute;
+    width: 493px;
+    height: 767px;
+    left: 510px;
+    top: 236px;
+  
+    background: #ffffff;
+    border-radius: 60px;
+
+}
+
+
+.chef-sleep:hover {
+  /* Start shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When animation is done, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
