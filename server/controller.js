@@ -14,6 +14,59 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
   },
 });
 
+module.exports = {
+  submitForm: (request, response) => {
+    sequelize.query(`SELECT * from meal_options`).then(([dbList]) => {
+      const { name, meats, carbs, veggies } = request.body;
+      console.log(request.body);
+      let responseData = {};
+
+      for (let i = 0; i < dbList.length; i++) {
+        if (
+          dbList[i].meats == meats &&
+          dbList[i].carbs == carbs &&
+          dbList[i].veggies == veggies &&
+          dbList[i].mealname
+        ) {
+          responseData = {
+            name: name,
+            mealName: dbList[i].mealname,
+            instructions: dbList[i].instructions,
+          };
+        }
+      }
+
+      console.log(responseData);
+      response.status(200).send(responseData);
+    });
+  },
+
+  getTips: (request, response) => {
+    sequelize.query(`SELECT * from cooking_tips`).then(([dbResult]) => {
+      const randomTip = dbResult[Math.floor(Math.random() * dbResult.length)];
+      const { name } = randomTip;
+      response.status(200).send(name);
+    });
+  },
+};
+
+// Replaced the SQL Database with the internal array/database below
+// Database can be found in bit.io DwayneForeman/WeHaveFoodAtHomeApp
+// const cookingTips = [
+//   "Always read a recipe in full before starting to cook.",
+//   "Use room temperature ingredients when baking.",
+//   "Don't overcrowd the pan when sautéing.",
+//   "Don't be afraid to experiment with spices and seasonings.",
+//   "Use a meat thermometer to ensure that meat is cooked to the proper temperature.",
+//   "When grilling, let the meat rest for a few minutes after cooking to allow the juices to redistribute.",
+//   "Cook with high-quality ingredients for the best flavor.",
+//   "Use a sharp knife to make chopping and slicing easier.",
+//   "Don't forget to preheat your oven before baking.",
+//   "Clean as you go to make cleanup easier.",
+// ];
+
+// Replaced the SQL Database with the internal array/database below
+// Database can be found in bit.io DwayneForeman/WeHaveFoodAtHomeApp
 // let mealOptionsArray = [
 //   [
 //     "Chicken",
@@ -343,55 +396,4 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
 //     3.	Serve hot, garnished with lemon wedges if desired.:
 // `,
 //   ],
-// ];
-
-module.exports = {
-  submitForm: (request, response) => {
-    sequelize.query(`SELECT * from meal_options`).then(([dbList]) => {
-      const { name, meats, carbs, veggies } = request.body;
-      console.log(request.body);
-      let responseData = {};
-
-      for (let i = 0; i < dbList.length; i++) {
-        if (
-          dbList[i].meats == meats &&
-          dbList[i].carbs == carbs &&
-          dbList[i].veggies == veggies &&
-          dbList[i].mealname
-        ) {
-          responseData = {
-            name: name,
-            mealName: dbList[i].mealname,
-            instructions: dbList[i].instructions,
-          };
-        }
-      }
-
-      console.log(responseData);
-      response.status(200).send(responseData);
-    });
-  },
-
-  getTips: (request, response) => {
-    sequelize.query(`SELECT * from cooking_tips`).then(([dbResult]) => {
-      const randomTip = dbResult[Math.floor(Math.random() * dbResult.length)];
-      const { name } = randomTip;
-      response.status(200).send(name);
-    });
-  },
-};
-
-// Replaced the SQL Database with the internal array/database below
-// Database can be found in bit.io DwayneForeman/WeHaveFoodAtHomeApp
-// const cookingTips = [
-//   "Always read a recipe in full before starting to cook.",
-//   "Use room temperature ingredients when baking.",
-//   "Don't overcrowd the pan when sautéing.",
-//   "Don't be afraid to experiment with spices and seasonings.",
-//   "Use a meat thermometer to ensure that meat is cooked to the proper temperature.",
-//   "When grilling, let the meat rest for a few minutes after cooking to allow the juices to redistribute.",
-//   "Cook with high-quality ingredients for the best flavor.",
-//   "Use a sharp knife to make chopping and slicing easier.",
-//   "Don't forget to preheat your oven before baking.",
-//   "Clean as you go to make cleanup easier.",
 // ];
